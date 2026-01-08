@@ -1,0 +1,60 @@
+.wrap {
+  margin-top: 14px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.unit {
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(0, 0, 0, 0.12));
+  padding: 14px 12px;
+  box-shadow: 0 14px 60px rgba(0, 0, 0, 0.3);
+}
+
+.value {
+  font-weight: 800;
+  font-size: clamp(22px, 3.3vw, 34px);
+  line-height: 1;
+  letter-spacing: 0.4px;
+  background: linear-gradient(90deg, rgba(89, 249, 255, 0.95), rgba(168, 85, 247, 0.95), rgba(255, 59, 212, 0.95));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 30px rgba(89, 249, 255, 0.12);
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.62);
+  letter-spacing: 0.25px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 12px;
+}
+
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.status {
+  padding: 8px 10px;
+  border-radius: 14px;
+  border: 1px solid rgba(89, 249, 255, 0.18);
+  background: rgba(89, 249, 255, 0.06);
+}
+
